@@ -6,7 +6,8 @@
     "start": "expo start -c --tunnel",
     "web": "expo start --web --tunnel",
     "tsc": "tsc",
-    "lint": "eslint . --fix --ext .tsx"
+    "lint": "eslint . --fix --ext .tsx",
+    "lintCheck": "eslint . --ext .tsx"
   },
   "dependencies": {
     "@expo/webpack-config": "^18.0.1",
