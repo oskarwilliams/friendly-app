@@ -1,11 +1,20 @@
-import { ImageBackground, View, ViewProps } from "react-native";
+import { useWindowDimensions, StyleSheet, View, ViewProps } from "react-native";
 
+import { headerHeight } from "../constants";
 
 const BaseView = (props: ViewProps) => {
+  const dimensions = useWindowDimensions();
 
-    return <ImageBackground source={require("../../assets/splash.png")} style={{width: '100%', height: '100%'}}>
-        <View {...props}/>
-    </ImageBackground>
-}
+  const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      alignItems: "center",
+      justifyContent: "center",
+      height: dimensions.height - headerHeight,
+    },
+  });
 
-export default BaseView
+  return <View {...props} style={props.style ?? styles.container} />;
+};
+
+export default BaseView;

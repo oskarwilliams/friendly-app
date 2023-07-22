@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "friendly-app",
+    "name": "FRIEND.LY",
     "slug": "friendly-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,8 +8,7 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "contain"
     },
     "assetBundlePatterns": [
       "**/*"
