@@ -25,6 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "efd8c414-85d5-4973-a065-2e8284683c73"
+      }
+    },
+    "owner": "oskarwilliams378"
   }
 }
